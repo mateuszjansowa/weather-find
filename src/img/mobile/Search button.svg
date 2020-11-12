@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="44" viewBox="0 0 45 44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #002035;
+      }
+
+      .cls-2 {
+        fill: #e8f1f5;
+      }
+    </style>
+  </defs>
+  <g id="Search_button" data-name="Search button" transform="translate(-77 -653)">
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="22.5" cy="22" rx="22.5" ry="22" transform="translate(77 653)"/>
+    <g id="loupe" transform="translate(105.723 668.285) rotate(90)">
+      <g id="Group_3" data-name="Group 3" transform="translate(-2 -0.997)">
+        <path id="Path_3" data-name="Path 3" class="cls-2" d="M17.5,16.46l-5.038-5.038a7.026,7.026,0,1,0-1.044,1.044L16.457,17.5A.738.738,0,1,0,17.5,16.46ZM7.013,12.553A5.537,5.537,0,1,1,12.55,7.016,5.542,5.542,0,0,1,7.013,12.553Z" transform="translate(0 -0.003)"/>
+      </g>
+    </g>
+  </g>
+</svg>

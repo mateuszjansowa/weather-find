@@ -1,0 +1,56 @@
+.main {
+    padding-bottom: $standardPadding;
+
+    &__hero {
+        line-height: 40px;
+        text-align: center;
+    }
+}
+
+.hero {
+    &__subtitle {
+        font-size: $big;
+        font-weight: 300;
+    }
+
+    &__title {
+        font-size: $bigger;
+        font-weight: 400;
+    }
+
+    &__temperature {
+        font-family: $catamaran;
+        font-size: $biggest;
+        font-weight: 300;
+        padding-top: $bigPadding;
+    }
+}
+
+.subhero {
+    &__desktop {
+        display: none;
+    }
+
+    &__mobile {
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        padding-top: $bigPadding;
+        width: 80%;
+    }
+
+    &__list {
+        text-align: center;
+        list-style: none;
+    }
+
+    &__item,
+    &__result {
+        font-size: $standard;
+        font-weight: 300;
+        padding-top: $standardPadding;
+    }
+
+}

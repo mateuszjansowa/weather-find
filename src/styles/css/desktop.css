@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Montserrat:wght@300;400&display=swap");
+@media (min-width: 701px) {
+  .header__weather-type {
+    display: none;
+  }
+  .header__logos {
+    width: 160px;
+  }
+  .header__logo {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 701px) {
+  .hero__subtitle {
+    font-size: 32px;
+    font-weight: 300;
+    padding: 15px 0;
+  }
+  .hero__title {
+    font-size: 52px;
+    padding-bottom: 20px;
+  }
+  .hero__temperature {
+    font-size: 92px;
+    padding-bottom: 20px;
+  }
+  .subhero__mobile {
+    display: none;
+  }
+  .subhero__desktop {
+    display: grid;
+  }
+  .desktop__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 60px 0 15px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .desktop__item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .item {
+    display: block;
+  }
+  .item__icon {
+    font-size: 52px;
+    padding: 15px 0;
+  }
+  .item__name {
+    font-family: "Catamaran", sans-serif;
+    font-size: 18px;
+  }
+  .item__value {
+    font-family: "Catamaran", sans-serif;
+    font-size: 32px;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 701px) {
+  .search {
+    max-width: 700px;
+    height: 40px;
+    width: 50%;
+  }
+  .search__icon {
+    left: -1%;
+    top: 48%;
+  }
+  .search__svg {
+    width: 52px;
+  }
+  .search__input {
+    border-radius: 50px;
+    height: 48px;
+    font-size: 20px;
+  }
+  .search__input:focus {
+    outline-color: #002035;
+  }
+}
+/*# sourceMappingURL=desktop.css.map */

@@ -1,0 +1,67 @@
+@media(min-width:701px) {
+    .hero {
+        &__subtitle {
+            font-size: $bigger;
+            font-weight: 300;
+            padding: $standardPadding 0;
+        }
+
+        &__title {
+            font-size: $biggerDesktop;
+            padding-bottom: 20px;
+        }
+
+        &__temperature {
+            font-size: $biggestDesktop;
+            padding-bottom: 20px;
+        }
+    }
+
+    .subhero {
+        &__mobile {
+            display: none;
+        }
+
+        &__desktop {
+            display: grid;
+
+        }
+
+    }
+
+    .desktop {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            padding: $desktopPadding 0 $standardPadding 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .item {
+        display: block;
+
+        &__icon {
+            font-size: $biggerDesktop;
+            padding: $standardPadding 0;
+        }
+
+        &__name {
+            font-family: $catamaran;
+            font-size: $standard;
+        }
+
+        &__value {
+            font-family: $catamaran;
+            font-size: $bigger;
+            padding: $standardPadding 0;
+        }
+    }
+}

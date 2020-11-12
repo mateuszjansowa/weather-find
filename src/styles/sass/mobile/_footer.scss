@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    position: relative;
+    width: 60%;
+
+    &__icon {
+        left: -1%;
+        position: absolute;
+        top: 40%;
+        z-index: 1;
+    }
+
+    &__svg {
+        width: 30px;
+    }
+
+    &__input-div {
+        left: 0%;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    &__input {
+        border: none;
+        border-radius: 15px;
+        font-family: $catamaran;
+        height: 30px;
+        text-align: center;
+        width: 100%;
+
+        &:focus {
+            outline-color: $darkBlue;
+        }
+    }
+
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8b9b799f61.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="header__weather">
+            <img class="header__weather-type" src="./img/mobile/sunny.png" alt="weather image">
+        </div>
+        <div class="header__logos">
+            <a href="#" class="header__link"> <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" width="32"
+                    height="28" viewBox="0 0 32 28">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #00131f;
+                            }
+
+                            .cls-2 {
+                                fill: #fafafa;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Refresh_button" data-name="Refresh button" transform="translate(-7 -8)">
+                        <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-1" width="32" height="28" rx="14"
+                            transform="translate(7 8)" />
+                        <g id="refresh" transform="translate(15.728 13.557)">
+                            <g id="Group_1" data-name="Group 1">
+                                <path id="Path_2" data-name="Path 2" class="cls-2"
+                                    d="M24.98,7.185a.607.607,0,1,0-1.2.191l0,.011a6.685,6.685,0,1,1-1.66-3.395l-2.69.9a.607.607,0,0,0-.384.768h0a.607.607,0,0,0,.768.384h0L23.46,4.827a.607.607,0,0,0,.415-.576V.607a.607.607,0,0,0-1.214,0V2.825a7.814,7.814,0,1,0,2.32,4.36Z"
+                                    transform="translate(-9.461)" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://github.com/mateuszjansowa" class="header__link"> <svg class="header__logo"
+                    xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #00131f;
+                            }
+
+                            .cls-2 {
+                                fill: #e8f1f5;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Github_button" data-name="Github button" transform="translate(-7 -45)">
+                        <rect id="Rectangle_5" data-name="Rectangle 5" class="cls-1" width="32" height="28" rx="14"
+                            transform="translate(7 45)" />
+                        <path id="github" class="cls-2"
+                            d="M11.5.5A11.4,11.4,0,0,0,0,11.8,11.32,11.32,0,0,0,7.863,22.522c.575.106.786-.243.786-.543,0-.268-.01-.979-.014-1.921-3.2.681-3.874-1.516-3.874-1.516a3.012,3.012,0,0,0-1.279-1.653c-1.042-.7.081-.686.081-.686a2.406,2.406,0,0,1,1.761,1.164,2.476,2.476,0,0,0,3.349.94A2.393,2.393,0,0,1,9.4,16.8c-2.554-.283-5.238-1.254-5.238-5.584A4.318,4.318,0,0,1,5.347,8.179a3.954,3.954,0,0,1,.1-2.991s.963-.3,3.162,1.159a11.026,11.026,0,0,1,5.75,0c2.185-1.461,3.148-1.159,3.148-1.159a4.063,4.063,0,0,1,.115,2.991A4.335,4.335,0,0,1,18.8,11.211c0,4.341-2.688,5.3-5.247,5.575a2.681,2.681,0,0,1,.776,2.091c0,1.512-.014,2.727-.014,3.094,0,.3.2.65.791.537A11.285,11.285,0,0,0,23,11.8,11.4,11.4,0,0,0,11.5.5Z"
+                            transform="translate(12 47.67)" />
+                    </g>
+                </svg></a>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="main__hero">
+            <h2 class="hero__subtitle"><span class="hero__description">Sunny day</span> in</h2>
+            <h1 class="hero__title"><span class="hero__city-name">...</span>, <span
+                    class="hero__country-name">...</span>
+            </h1>
+            <h3 class="hero__temperature"><span class="hero__temperature--description">...</span> &#176;C</h3>
+        </section>
+
+        <section class="main__subhero">
+            <div class="subhero__mobile">
+                <ul class="subhero__list">
+                    <li class="subhero__item subhero__item--wind">Wind</li>
+                    <li class="subhero__item subhero__item--humidity">Humidity</li>
+                    <li class="subhero__item subhero__item--pressure">Pressure</li>
+                    <li class="subhero__item subhero__item--sunrise">Sunrise</li>
+                    <li class="subhero__item subhero__item--sunset">Sunset</li>
+                </ul>
+
+                <ul class="subhero__list">
+                    <li class="subhero__result"><span class="subhero__result subhero__result--wind-direction">NE</span>,
+                        <span class="subhero__result--wind-value">...</span> km/h</li>
+                    <li class="subhero__result"><span class="subhero__result  subhero__result--humidity">...</span> %
+                    </li>
+                    <li class="subhero__result "><span class="subhero__result  subhero__result--pressure">...</span>
+                        hPa</li>
+                    <li class="subhero__result"><span class="subhero__result  subhero__result--sunrise">..:..</span>
+                    </li>
+                    <li class="subhero__result "><span class="subhero__result  subhero__result--sunset">..:..</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subhero__desktop">
+                <ul class="desktop__list">
+                    <li class="desktop__item">
+                        <i class="item__icon fas fa-thermometer-half"></i>
+                        <span class="item__name">Feels like</span>
+                        <span class="item__value"><span class="item__valie item__value--temperature">...</span>
+                            &#176;C</span>
+                    </li>
+
+                    <li class="desktop__item">
+                        <i class="item__icon fas fa-tachometer-alt"></i>
+                        <span class="item__name">Pressure</span>
+                        <span class="item__value"><span class="item__value item__value--pressure">...</span> hPa</span>
+                    </li>
+
+                    <li class="desktop__item">
+                        <i class="item__icon fas fa-wind"></i>
+                        <span class="item__name">Wind</span>
+                        <span class="item__value"><span class="item__value item__value--wind-direction">...</span>,
+                            <span class="item__value item__value--wind-value">...</span> km/h
+                        </span>
+                    </li>
+
+                    <li class="desktop__item">
+                        <i class="item__icon fas fa-tint"></i>
+                        <span class="item__name">Humidity</span>
+                        <span class="item__value"><span class="item__value item__value--humidity">...</span> %</span>
+                    </li>
+
+                    <li class="desktop__item">
+                        <i class="item__icon fas fa-eye"></i>
+                        <span class="item__name">Visibility</span>
+                        <span class="item__value"><span class="item__value item__value--visibility">...</span> km</span>
+                    </li>
+
+                    <li class="desktop__item">
+                        <i class="item__icon fas fa-cloud-rain"></i>
+                        <span class="item__name">Precipitaion</span>
+                        <span class="item__value"><span class="item__value item__value--precipitation">...</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <form class="search">
+            <div class="search__icon">
+                <svg class="search__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 44">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #002035;
+                            }
+
+                            .cls-2 {
+                                fill: #e8f1f5;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Search_button" data-name="Search button" transform="translate(-77 -653)">
+                        <ellipse id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="22.5" cy="22" rx="22.5" ry="22"
+                            transform="translate(77 653)" />
+                        <g id="loupe" transform="translate(105.723 668.285) rotate(90)">
+                            <g id="Group_3" data-name="Group 3" transform="translate(-2 -0.997)">
+                                <path id="Path_3" data-name="Path 3" class="cls-2"
+                                    d="M17.5,16.46l-5.038-5.038a7.026,7.026,0,1,0-1.044,1.044L16.457,17.5A.738.738,0,1,0,17.5,16.46ZM7.013,12.553A5.537,5.537,0,1,1,12.55,7.016,5.542,5.542,0,0,1,7.013,12.553Z"
+                                    transform="translate(0 -0.003)" />
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="search__input-div">
+                <input type="text" class="search__input" placeholder="Search for a city">
+            </div>
+        </form>
+    </footer>
+
+</body>
+
+</html>

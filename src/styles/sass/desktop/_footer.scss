@@ -1,0 +1,27 @@
+@media(min-width: 701px) {
+    .search {
+        max-width: 700px;
+        height: 40px;
+        width: 50%;
+
+        &__icon {
+            left: -1%;
+            top: 48%;
+        }
+
+        &__svg {
+            width: 52px;
+        }
+
+        &__input {
+            border-radius: 50px;
+            height: 48px;
+            font-size: $big;
+
+            &:focus {
+                outline-color: $darkBlue;
+            }
+        }
+
+    }
+}

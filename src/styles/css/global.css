@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&family=Montserrat:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #00131F;
+  color: #E8F1F5;
+  font-family: "Montserrat", sans-serif;
+}
+/*# sourceMappingURL=global.css.map */

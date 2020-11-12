@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import '_var.scss';
+
+body {
+    background-color: $darkestBlue;
+    color: $lightBlue;
+    font-family: $montserrat;
+}
