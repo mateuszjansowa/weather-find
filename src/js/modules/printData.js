@@ -21,7 +21,7 @@ const printData = data => {
     console.log(weatherData);
 
     //Icon mobile
-    elements.weatherImage.src = setWeatherIcon(weatherData.weather.description);
+    elements.weatherImage.src = setWeatherIcon(weatherData.weather.description, weatherData.pod);
     //Hero
     elements.weatherDescription.textContent = weatherData.weather.description;
     elements.weatherCity.textContent = weatherData.city_name;
@@ -57,21 +57,31 @@ const showPrecipitation = (data) => {
     }
 }
 
-const setWeatherIcon = description => {
+const setWeatherIcon = (description, partOfDay) => {
     const descriptionFormatted = description.toLowerCase();
 
+    if (checkCloudsConditions(descriptionFormatted, partOfDay)) {
+        if (partOfDay === 'd') {
+            return cloudy;
+        } else if (partOfDay === 'n') {
+            return cloudyNight;
+        }
+        //Night mode
+    } else if (checkSunnyConditions(descriptionFormatted, partOfDay)) {
+        if (partOfDay === 'd') {
+            return sunny;
+        } else if (partOfDay === 'n') {
+            return night;
+        }
 
-    if (checkCloudsConditions(descriptionFormatted)) {
-        return cloudy;
-    } else if (checkSunnyConditions(descriptionFormatted)) {
-        return sunny;
+        //Night mode
     } else if (checkFoggyConditions(descriptionFormatted)) {
         return misty;
     } else if (checkSnowyConditions(descriptionFormatted)) {
         return snowy;
     } else if (checkRainyConditions(descriptionFormatted)) {
         return rainy;
-    } else if (checkStormyCondition(descriptionFormatted)) {
+    } else if (checkStormyConditions(descriptionFormatted)) {
         return stormy;
     } else {
         return sunny
