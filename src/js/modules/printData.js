@@ -1,9 +1,3 @@
-//TODO: 
-//4. Night and day icons
-//2. Animated SVG in Desktop view
-//3. Better precipitation UI in Desktop View
-
-
 import {
     elements
 } from './DOMelements'
@@ -16,12 +10,18 @@ import stormy from "../../img/mobile/storm.png"
 import sunny from "../../img/mobile/sunny.png"
 import misty from "../../img/mobile/mist.png"
 
+import {
+    animateFadeUp,
+    animateFadeDown
+} from './animate'
+
 const printData = data => {
     const weatherData = data.data[0];
     console.log(weatherData);
 
     //Icon mobile
     elements.weatherImage.src = setWeatherIcon(weatherData.weather.description, weatherData.pod);
+
     //Hero
     elements.weatherDescription.textContent = weatherData.weather.description;
     elements.weatherCity.textContent = weatherData.city_name;
@@ -45,7 +45,7 @@ const printData = data => {
     elements.visibilityDesktop.textContent = weatherData.vis;
     elements.precipitationDesktop.textContent = showPrecipitation(weatherData.precip);
 
-
+    startAnimations();
 
 }
 
@@ -121,7 +121,12 @@ const checkStormyConditions = descriptionFormatted => {
     return stormyConditions.some(el => descriptionFormatted.includes(el));
 }
 
-
+const startAnimations = () => {
+    animateFadeDown(elements.weatherImage);
+    animateFadeDown(elements.totalHero);
+    animateFadeUp(elements.desktopItems);
+    animateFadeUp(elements.mobileItems);
+}
 
 
 export default printData;

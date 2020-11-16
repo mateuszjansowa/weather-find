@@ -6,6 +6,11 @@ import {
     elements
 } from './modules/DOMelements'
 import printData from './modules/printData'
+
+//TODO: 
+//3. Better precipitation UI in Desktop View
+//4. first weather download based on geolocation
+
 //Import document listeners
 
 const api = new API();
